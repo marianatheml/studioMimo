@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Oxygen:wght@700&family=Rubik&family=Sen:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Oxygen:wght@700&family=Rubik&display=swap');
 @import url(https://fonts.googleapis.com/css2?family=Oxygen:wght@700&family=Rubik&display=swap);
 
 * {
@@ -6,106 +7,268 @@
     margin: 0;
 }
 
+/* -------------- menu -------------- */
+
 .nav-bar {
-    background-color: antiquewhite;
-    padding: 10px;
     display: flex;
+    justify-content: space-between;
     position: fixed;
-    top: 0;
+    height: 100px;
     width: 100%;
-    height: 25px;
+}
+
+.nav-bar a {
+    display: flex;
+    margin: 0 100px;
 }
 
 .nav-bar ul {
     list-style: none;
     display: flex;
-    width: 100%;
     justify-content: space-around;
+    margin: 0 100px;
     align-items: center;
 }
 
 .nav-bar ul li a {
     text-decoration: none;
-    color: #6c3c7c;
-    margin: 10px;
-    font-size: 15px;
-    font-family: 'Oxygen', sans-serif;
+    color: white;
+    margin: 0 20px ;
+    font-size: 15;
+    font-family: 'Sen', sans-serif;
 }
 
 .nav-bar ul li a:hover {
     color: #ccb4d4;
-    font-size: 18px;
+    transform: scale(1.20);
+}
+
+/* -------------- homepage -------------- */
+
+.homebackground {
+    background-color: #6c3c7c;
+    background-image: url(../img/gradientform.png);
+    display: flex;
+    flex-direction: column;
 }
 
 .titlecontainer {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    margin: 200px 50px ;
 }
 
-.title {
-    color: #6c3c7c;
-    background: #ccb4d4;
-    padding: 10px 0;
-    text-align: center;
-    font-size: 50px;
-    margin-top: 80px;
-    width: 600px;
-    font-family: 'Oxygen', sans-serif;
-    box-shadow: 20px 15px 0px 8px antiquewhite;
-}
-
-.description {
-    color: #6c3c7c;
+.titlecontainer img {
     display: flex;
+    width: 700px;
+    height: 150px;
+    object-fit: cover;
+    
+}
+
+.titlecontainer h1 {
+    color: white;
+    font-size: 31px;
+    font-family: 'Julius Sans One', sans-serif;
+    padding: 0 65px;
+}
+
+.titlecontainer button {
+    margin: 10px 65px;
+    color: #6c3c7c;
+    background: linear-gradient(270deg, #ccb4d4 58.33%, #FFECD7 100%);
+    border-radius: 15px;
+    width: 250px;
+    height: 55px;
+    font-size: 20px;
+    font-family: 'Sen', sans-serif;
+    cursor: pointer;
+    border: 0;
+    position: absolute;
+}
+
+.titlecontainer button:hover {
+    margin: 8px 65px;
+    color: #6c3c7c;
+    background: linear-gradient(270deg, #FFECD7 30%, #ccb4d4 100%);
+    transform: scale(0.95);
+    font-family: 'Sen', sans-serif;
+    cursor: pointer;
+    transform: scale(0.95);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+    transition-property: all;
+}
+
+.illustration {
+    display: flex;
+    position:relative;
+    width: 35%;
+    margin: -500px 0 0px 750px ;
+}
+
+
+/* -------------- aboutme -------------- */
+
+.aboutmebackground {
+    background-color: #FFECD7;
+    display: flex;
+    background-image: url(../img/gradientform.png);
+    background-position: 0 260px;
+    flex-direction: column;
+}
+
+.aboutme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6c3c7c;
+    margin: 100px 200px;
+    font-family: 'Sen', sans-serif;
+}
+
+.aboutme h1 {
+    font-size: 45px;
+    font-family: 'Julius Sans One', sans-serif;
+    margin: 50px 0 10px;
+}
+
+.aboutme h2 {
+    display: flex;
+    font-size: 25px;
+    margin: 0 45px 10px 0px;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.aboutme p {
     font-size: 18px;
     text-align: justify;
-    margin: 40px 40px;
-    font-family: 'Rubik', sans-serif;
-    align-items: center;
-    justify-content: space-around;
+    margin: 0 150px 0 0;
 }
 
-.description img {
-    width: 25%;
-    min-width: 50px;
-}
-
-.description p {
-    max-width: 50%;
-}
-
-.image {
+.aboutme img{
     display: flex;
-    padding: 50px 50px 50px 50px;
-    background-color: antiquewhite;
+    object-fit: cover;
+    border-radius: 100%;
+    height: 250px;
+    width: 250px;
+    margin: -90px 50px;
+}
 
+.aboutme img:hover {
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+    transition-property: all;
+} 
+
+/* -------------- gallerypage -------------- */
+
+.gallerybackground {
+    background-color: #ccb4d4;
+    display: flex;
+    background-image: url(../img/gradientform.png);
+    background-position: 0 4500px;
+    flex-direction: column;
+}
+
+.image{
+    display: flex;
+    flex-direction: column;
+    margin: -240px 0 0 220px;
+    height: 100%;
 }
 
 .image ul {
     list-style: none;
     display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: center;
 }
 
-.image ul li a {
-    margin: 20px;
+.image ul li a img{
+    display: flex;
+    object-fit: cover;
+    justify-content: space-around;
+    width: 250px;
+    height: 250px;
+    margin: -20px;
+    border-radius: 100%;
+} 
+
+.image ul li a img:hover {
+    transform: scale(1.2);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+    transition-property: all;
 }
 
-.image ul li a img {
-    border-radius: 30%;
-    max-width: 100%;
+.gallerytitle {
+    display: flex;
+    flex-direction: column;
+    margin: 100px 800px 100px 100px;
+    font-family: 'Julius Sans One', sans-serif;
+    color: #6c3c7c;    
+    padding: 100px 0;
+}
+
+.gallerytitle button{
+    color: #FFECD7;
+    background: linear-gradient(270deg, #6c3c7c 30%, #FFECD7 100%);
+    border-radius: 15px;
+    width: 250px;
+    height: 55px;
+    font-size: 20px;
+    font-family: 'Sen', sans-serif;
+    cursor: pointer;
+    border: 0;
+}
+
+.gallerytitle button:hover {
+    color: #6c3c7c;
+    background: linear-gradient(270deg, #FFECD7 30%, #6c3c7c 100%);
+    transform: scale(0.95);
+    font-family: 'Sen', sans-serif;
+    cursor: pointer;
+    transform: scale(0.95);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+    transition-property: all;
+}
+
+/* -------------- contactpage -------------- */
+
+.contactbackground {
+    background-color: #FFECD7;
+    background-image: url(../img/gradientform.png);
+    background-position: 0 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacttitle {
+    display: flex;
+    width: 100%;
+    margin: -95px 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact {
     width: 100%;
     display: flex;
-    margin: 50px 0;
-    justify-content: space-evenly;
+    margin: 200px 150px;
     align-items: flex-start;
     color: #6c3c7c;
+    position: fixed;
 }
 
 .contact h2 {
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 35px;
+    margin:  0 0 30px 0;
+
 }
 
 .form {
@@ -116,46 +279,50 @@
 .field {
     display: flex;
     flex-direction: column;
-    margin: 15px 0 0;
-    max-width: 300px;
     color: #6c3c7c;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Sen', sans-serif;
 }
 
-button {
-    margin-top: 10px;
-    border: 2px solid #fff;
-    width: 100%;
-    padding: 10px;
+.field input {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 15px;
+    border-radius: 10px;
+    height: 20px;
+    border: none;
+    box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.5), inset 2px 2px 4px rgba(170, 170, 204, 0.25), inset 5px 5px 10px rgba(170, 170, 204, 0.5), inset -5px -5px 10px #FFFFFF;
+}
+
+.field textarea {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.5), inset 2px 2px 4px rgba(170, 170, 204, 0.25), inset 5px 5px 10px rgba(170, 170, 204, 0.5), inset -5px -5px 10px #FFFFFF;
+}
+
+.form button {
+    margin: 10px 0;
     color: #6c3c7c;
-    background: #ccb4d4;
-    font-size: 18px;
-    letter-spacing: 3px;
-    font-family: 'Oxygen', sans-serif;
+    background: linear-gradient(270deg, #ccb4d4 58.33%, #6c3c7c 100%);
+    border-radius: 15px;
+    width: 500px;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Sen', sans-serif;
+    cursor: pointer;
+    border: 0;
+    position: fixed;
 }
 
-button:hover {
-    color: #ccb4d4;
-    background: antiquewhite;
-    border: 2px solid #ccb4d4;
-    font-weight: 700;
+.form button:hover {
+    color: #FFECD7;
+    background: linear-gradient(270deg, #6c3c7c 30%, #ccb4d4 100%);
+    transform: scale(0.95);
+    font-family: 'Sen', sans-serif;
+    cursor: pointer;
+    transform: scale(0.95);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+    transition-property: all;
 }
 
-.map {
-    margin: 15px 0 0;
-}
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    background-color: #ccb4d4;
-    padding: 10px;
-    color: #6c3c7c;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Rubik', sans-serif;
-}
-
-.footer img {
-    width: 10%;
-}
