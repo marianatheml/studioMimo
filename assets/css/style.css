@@ -269,6 +269,11 @@
     font-size: 35px;
 }
 
+.contact img {
+    margin: -100px 0;
+    width: 500px;
+}
+
 .form {
     display: flex;
     flex-direction: column;
