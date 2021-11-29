@@ -37,24 +37,26 @@
 
                 <div class="field">
                     <label for="nome">NOME:</label>
-                    <input type="text" id="nome" />
+                    <input type="text" id="nome" onkeyup="validaNome()"/>
                 </div>
-
+                <div class="field" id='txtNome'></div>
                 <div class="field">
                     <label for="email">E-MAIL:</label>
-                    <input type="text" id="email" />
+                    <input type="text" id="email" onkeyup="validaEmail()"/>
                 </div>
-
+                <div class="field" id='txtEmail'></div>
                 <div class="field">
                     <label for="assunto">ASSUNTO:</label>
-                    <textarea name="assunto" id="assunto" cols="60" rows="10"></textarea>
+                    <textarea name="assunto" id="assunto" cols="60" rows="6"></textarea>
                 </div>
-                
 
-                <button>ENVIAR</button>
+                <button onclick="enviar()">ENVIAR</button>
             </form>
         </div>
     </div>
+
+    <script src="./assets/js/script.js"></script>
+
 </body>
 
 </html>
