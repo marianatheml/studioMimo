@@ -108,6 +108,10 @@
     margin: -500px 0 0px 750px ;
 }
 
+.bottonline {
+    display: flex;
+    margin: -230px 0;
+}
 
 /* -------------- aboutme -------------- */
 
@@ -124,45 +128,51 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #6c3c7c;
-    margin: 100px 200px;
-    font-family: 'Sen', sans-serif;
+    margin: 100px 150px;
 }
 
-.aboutme h1 {
-    font-size: 45px;
-    font-family: 'Julius Sans One', sans-serif;
-    margin: 50px 0 10px;
-}
-
-.aboutme h2 {
+.images {
     display: flex;
-    font-size: 25px;
-    margin: 0 45px 10px 0px;
-    font-family: 'Julius Sans One', sans-serif;
+    position: relative;
+    margin: 100px;
 }
 
-.aboutme p {
-    font-size: 18px;
-    text-align: justify;
-    margin: 0 150px 0 0;
-}
-
-.aboutme img{
+.images img{
     display: flex;
-    object-fit: cover;
+    position: relative;
+    margin: -40px;
     border-radius: 100%;
-    height: 250px;
-    width: 250px;
-    margin: -90px 50px;
+    width: 280px;
 }
 
-.aboutme img:hover {
-    transform: scale(1.1);
+.images img:hover {
+    transform: scale(1.2);
     transition-duration: 0.3s;
     transition-timing-function: ease-in;
     transition-property: all;
-} 
+}
+.text h1 {
+    font-size: 47px;
+    margin: 30px 0;
+    font-family: 'Julius Sans One', sans-serif;
+    color: #6c3c7c;
+}
+
+.text h2 {
+    display: flex;
+    margin: 15px 0;
+    font-size: 18px;
+    font-family: 'Julius Sans One', sans-serif;
+    color: #6c3c7c;
+}
+
+.text p {
+    font-size: 20px;
+    text-align: justify;
+    color: #6c3c7c;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
 
 /* -------------- gallerypage -------------- */
 
@@ -175,33 +185,33 @@
     flex-direction: column;
 }
 
-.image{
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    margin: 110px 110px 0;
+}
+
+.galleryimages{
     display: flex;
     flex-direction: column;
-    margin: -240px 0 0 220px;
-    height: 100%;
 }
 
-.image ul {
+.galleryimages ul {
     list-style: none;
     display: flex;
-    position: fixed;
-    width: 100%;
-    justify-content: center;
 }
 
-.image ul li a img{
+.galleryimages ul li a img{
     display: flex;
     object-fit: cover;
-    justify-content: space-around;
     width: 250px;
     height: 250px;
-    margin: -20px;
     border-radius: 100%;
+    margin: -20px 0;
 } 
 
-.image ul li a img:hover {
-    transform: scale(1.2);
+.galleryimages ul li a img:hover {
+    transform: scale(1.1);
     transition-duration: 0.3s;
     transition-timing-function: ease-in;
     transition-property: all;
@@ -210,18 +220,27 @@
 .gallerytitle {
     display: flex;
     flex-direction: column;
-    margin: 100px 800px 100px 150px;
-    font-family: 'Julius Sans One', sans-serif;
-    color: #6c3c7c;    
-    padding: 100px 0;
+    justify-content: center;
+    color: #6c3c7c;
+}
+
+.gallerytitle h1 {
+    font-size: 100px;
+    font-family: 'Sen', sans-serif;
+    margin-bottom: -10px;
+}
+
+.gallerytitle h2 {
+    font-size: 45px;
+    font-family: 'Sen', sans-serif;
 }
 
 .gallerytitle button{
     color: #FFECD7;
-    background: linear-gradient(270deg, #6c3c7c 30%, #FFECD7 100%);
+    background: linear-gradient(270deg, #6c3c7c 60%, #FFECD7 100%);
     border-radius: 15px;
-    width: 250px;
-    height: 55px;
+    width: 230px;
+    height: 50px;
     font-size: 20px;
     font-family: 'Sen', sans-serif;
     cursor: pointer;
