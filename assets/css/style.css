@@ -50,6 +50,7 @@
     background-image: url(../img/gradientform.png);
     display: flex;
     flex-direction: column;
+    background-size: cover;
 }
 
 .titlecontainer {
@@ -116,6 +117,7 @@
     background-image: url(../img/gradientform.png);
     background-position: 0 260px;
     flex-direction: column;
+    background-size: cover;
 }
 
 .aboutme {
@@ -168,7 +170,8 @@
     background-color: #ccb4d4;
     display: flex;
     background-image: url(../img/gradientform.png);
-    background-position: 0 4500px;
+    background-size: cover;
+    background-position: 0 100px;
     flex-direction: column;
 }
 
@@ -207,7 +210,7 @@
 .gallerytitle {
     display: flex;
     flex-direction: column;
-    margin: 100px 800px 100px 100px;
+    margin: 100px 800px 100px 150px;
     font-family: 'Julius Sans One', sans-serif;
     color: #6c3c7c;    
     padding: 100px 0;
@@ -242,7 +245,9 @@
 .contactbackground {
     background-color: #FFECD7;
     background-image: url(../img/gradientform.png);
-    background-position: 0 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: 0 250px;
     display: flex;
     flex-direction: column;
 }
@@ -289,6 +294,7 @@
 
 .field input {
     font-family: 'Julius Sans One', sans-serif;
+    padding: 5px;
     font-size: 15px;
     border-radius: 10px;
     height: 20px;
@@ -299,6 +305,7 @@
 .field textarea {
     font-family: 'Julius Sans One', sans-serif;
     font-size: 15px;
+    padding: 5px;
     border-radius: 10px;
     border: none;
     box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.5), inset 2px 2px 4px rgba(170, 170, 204, 0.25), inset 5px 5px 10px rgba(170, 170, 204, 0.5), inset -5px -5px 10px #FFFFFF;
